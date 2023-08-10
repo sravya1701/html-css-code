@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.skillsync-logo{
+    width: 100px;
+    height: 80px;
+    align-items: center;
+}
+.menu-bar{
+    width: 100%;
+    background: grey;
+    text-align: center;
+    
+
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(253, 251, 250);
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: rgb(5, 6, 6);
+}
+.active,.menu-bar ul li:hover{
+  background: rgb(246, 244, 242);
+  border-radius: 3px solid rgb(226, 224, 221) ;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: grey;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #e80d0d;
+    border-radius: 0;
+    text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #720909;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 120px;
+    background-color: beige;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    height: 88%;
+    align-items: center;
+   
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: aliceblue;
+    font-size: 100px;
+    text-align: left;
+}
+p{
+    color: rgb(187, 193, 193);
+    font-size: 14px;
+    line-height: 15px;
+    text-align: left;
+}
+button{
+    width: 180px;
+    color: rgb(6, 7, 7);
+    font-size: 12px;
+    padding: 12px 0;
+    background: #efecec;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(2494642.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+h5{
+    color: white;
+    
+}
+p{
+    color: aliceblue;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 500px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+.manual-btn:hover{
+    background: rgb(242, 238, 238);
+    
+}
